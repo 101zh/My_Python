@@ -105,7 +105,13 @@ dictionary = {
     "hp":"50"
 }
 
-# print(dictionary)
+print(dictionary)
+print(dictionary.values())
+dictlist=[]
+for key, value in dictionary.items():
+    temp = value
+    dictlist.append(temp)
+print(dictlist)
 
 # list1=[1,2,3,4,5,6,7,8,9,0]
 
