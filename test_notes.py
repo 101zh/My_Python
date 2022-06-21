@@ -134,3 +134,7 @@ print(dictlist)
 # data.loc[0, "level"]="AAAAAAAAAAAAAAAAAAAA"# updating the column value/data
 # data.to_csv("test.csv", index=False) # writing into the file
 # print(data)
+
+# cool="a                "
+# cool=cool.replace(" ", "")
+# print(cool+"b")
