@@ -1,5 +1,6 @@
 import random
-from tkinter import Button
+from colorama import Fore, Back, Style
+from colored import fg
 import pandas as pd
 import pygame
 import sys
@@ -138,3 +139,24 @@ print(dictlist)
 # cool="a                "
 # cool=cool.replace(" ", "")
 # print(cool+"b")
+
+print("\033[94m {}\033[00m".format("aaaaaaaaaaa"))
+def print_format_table():
+    """
+    prints table of formatted text format options
+    """
+    for style in range(8):
+        for fg in range(30, 38):
+            s1 = ''
+            for bg in range(40, 48):
+                format = ';'.join([str(style), str(fg), str(bg)])
+                s1 += '\x1b[%sm %s \x1b[0m' % (format, format)
+            print(s1)
+        print('\n')
+ 
+7;35;40
+'\x1b[7;35;40sm 7;35;40s \x1b[0m'
+print_format_table()
+purple=fg(128)
+print("adfad")
+print(Fore.WHITE+'\x1b[7;35;40mjsfdkljfslk\x1b[0m')
